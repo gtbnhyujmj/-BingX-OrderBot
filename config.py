@@ -1,3 +1,5 @@
+# 放 API KEY、SECRET、伺服器位址等設定
+
 API_URL = "https://open-api.bingx.com"
 API_URL_VST = ""
 
