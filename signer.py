@@ -1,3 +1,6 @@
+# 簽證機 = 加密機
+# 放簽名/加密邏輯
+
 import hmac
 from hashlib import sha256
 
