@@ -3,7 +3,7 @@
 
 # 根網址
 API_URL = "https://open-api.bingx.com"
-API_URL_VST = ""
+API_URL_VST = "https://open-api-vst.bingx.com" #模擬倉專用
 
 # ... 依需求加入其他API路徑
 # Market-Data = 12個 => 2025/06/01
@@ -54,6 +54,32 @@ Export_fund_flow = "/openApi/swap/v2/user/income/export"
 
 # 取得帳戶盈虧資金流向 = 查詢當前帳戶下永續合約的資金流動情況 / GET
 Get_Account_Profit_and_Loss_Fund_Flow = "/openApi/swap/v2/user/income"
+
+# 查詢交易手續費率 = 取得當前使用者的交易費率 / GET
+Query_Trading_Commission_Rate = "openApi/swap/v2/user/commissionRate"
+
+# 查詢帳戶資料 = 取得使用者USDC和USDT永續合約帳戶的資產資訊 / GET
+Query_account_data = "/openApi/swap/v3/user/balance"
+
+# 查詢持倉資料 = 取得使用者永續合約持倉資訊 / GET
+Query_position_data = "/openApi/swap/v2/user/positions"
+
+
+# 
+# Trades-Endpoints = 42個 => 2025/06/01
+# 跟倉位操作有關的東西
+
+# 所有訂單查詢（All Orders） / GET
+# 查詢用戶的歷史訂單（訂單狀態包含：已完全成交、待成交、新建、部分成交、已取消）。
+All_Orders_Query_the_user's_historical_orders = "/openApi/swap/v1/trade/fullOrder"
+
+# 申請 VST 資產以進行模擬交易 / POST
+Apply VST = "/openApi/swap/v1/trade/getVst"
+
+# 延遲全部撤單（Cancel All After） / POST
+# 倒數計時結束後，系統會撤銷目前所有掛單。
+# 此請求可以持續發送，以不斷延長“懲罰”倒數時間。
+Cancel_All_After = "/openApi/swap/v2/trade/cancelAllAfter"
 
 
 
