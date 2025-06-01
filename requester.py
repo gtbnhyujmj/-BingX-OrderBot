@@ -1,3 +1,6 @@
+# 負責發送請求，
+# 負責處理伺服器回應。
+
 import requests
 from .config import API_URL, API_KEY, SECRET_KEY
 from .signer import get_sign
