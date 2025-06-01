@@ -20,3 +20,13 @@ BingX Python API Module
 5. from demo import set_dual_side_position, get_commission_rate
 6. print(set_dual_side_position(True))
    print(get_commission_rate())
+
+###
+打包 zip 步驟（在你本機）
+建立好所有檔案（內容照上面），放進 bingx_api 資料夾
+
+用滑鼠右鍵 → 壓縮成 zip 檔
+
+上傳到 Google Drive
+
+依前述 Colab 範例掛載、解壓縮、import 即可
