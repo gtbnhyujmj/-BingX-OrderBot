@@ -202,26 +202,23 @@ Query_Order_details = "/openApi/swap/v2/trade/order"
 # 調整用戶在指定合約品種下的開倉槓桿倍數。
 Set_Leverage = "/openApi/swap/v2/trade/leverage"
 
+# 設定持倉模式 / POST
+# 用於設定永續合約的持倉模式，支援雙向持倉模式與單向持倉模式
+Set_Position_Mode = "/openApi/swap/v1/positionSide/dual"
+
+# 切換多資產模式（Switch Multi-Assets Mode） / POST
+# 切換帳戶多資產模式
+Switch_Multi_Assets_Mode = "/openApi/swap/v1/trade/assetMode"
+
+# 用於查詢 TWAP 委託訂單的詳細資訊 / GET
+TWAP_Order_Details = "/openApi/swap/v1/twap/orderDetail"
+
+# 測試下單 / POST
+Test_Order = "/openApi/swap/v2/trade/order/test"
+
+# 用戶強制平倉訂單。 / GET
+# 查詢用戶的強制平倉訂單。
+User's_Force_Orders = "/openApi/swap/v2/trade/forceOrders"
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-SWAP_POSITION_DUAL = '/openApi/swap/v1/positionSide/dual'
-USER_COMMISSION_RATE = '/openApi/swap/v2/user/commissionRate'
+"""-END-"""
