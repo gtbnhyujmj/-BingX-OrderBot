@@ -2,6 +2,9 @@
 # 從BingX API文件貼過來的
 # 真正的"虛擬信件"的內容擺在這邊
 
+# 放參數的
+# Market-Data = 12個 @ 2025/06/02
+
 from .endpoints import SWAP_POSITION_DUAL
 from .requester import send_request
 
