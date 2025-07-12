@@ -1,3 +1,5 @@
+目標: 物件化這整個API，要傳去其他的專案中。
+
 ### BingX_Auto_Order
 BX makes me money.
 
