@@ -1,0 +1,8 @@
+bingx_api/
+│
+├── __init__.py         # 讓這個資料夾變成 package（可選）
+├── config.py           # 放 API KEY、SECRET、伺服器位址等設定
+├── endpoints.py        # 集中管理所有 API 路徑（V1/V2/V3），統一命名
+├── signer.py           # 放簽名/加密邏輯
+├── requester.py        # 負責統一發送請求，處理回應
+└── demo.py             # 各類 demo 或功能封裝，可用 class 實作
