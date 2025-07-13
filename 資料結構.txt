@@ -6,3 +6,20 @@ bingx_api/
 ├── signer.py           # 放簽名/加密邏輯
 ├── requester.py        # 負責統一發送請求，處理回應
 └── demo.py             # 各類 demo 或功能封裝，可用 class 實作
+
+
+每個 .py 檔案職責簡介
+config.py
+存 API 基本設定，例如 APIKEY、SECRETKEY、主機網址等。
+
+endpoints.py
+集中管理所有 API 路徑，例如 SWAP_POSITION_DUAL = '/openApi/swap/v1/positionSide/dual'。
+
+signer.py
+實作加密函數，例如 HMAC-SHA256。
+
+requester.py
+統一包裝 requests，輸入 method/path/參數，自動簽名、送出、回傳結果。
+
+demo.py
+根據需要設計不同 demo 或 API 功能，調用上面模組。
